@@ -1,0 +1,24 @@
+Text
+
+streamlit
+pandas
+spotipy
+python-dotenv
+
+Bash
+
+pip install -r requirements.txt
+
+Env 
+
+SPOTIFY_CLIENT_ID=6d73f541909e4de2bd08a7971e516bdc
+SPOTIFY_CLIENT_SECRET=723a7b5bb24a4196954c93096a6de54f
+
+Python 
+
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+SPOTIFY_CLIENT_ID = os.getenv("SPOTIFY_CLIENT_ID")
+SPOTIFY_CLIENT_SECRET = os.getenv("SPOTIFY_CLIENT_SECRET")
